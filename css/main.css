@@ -1,0 +1,135 @@
+body {
+	/*color: 2d2d2d;*/
+	padding-top: 55px;
+}
+
+/*header {
+	padding-top: 100px;
+}*/
+
+h2 {
+	/*padding-left: 75px;*/
+	color: floralwhite;
+}
+
+h3 {
+	padding-top: 100px;
+	text-align: center;
+}
+
+/*figure {
+	padding-top: 100px
+}
+*/
+h4 {
+	/*padding-top: 5px;
+	padding-left: 50px;
+	font-weight: bold;*/
+	text-align: center;
+
+}
+
+section {
+	padding-top: 55px;
+  /*height: 700px;*/
+}
+
+p {
+	color: #009999;
+	padding: 20px;
+}
+
+footer {
+	text-align: center;
+}
+
+a {
+	color: #009999
+}
+
+.sectionpic {
+	width: 100%;
+}
+
+.trio {
+	font-size: 16px;
+}
+
+#socialmedia {
+	padding: 25px;
+	text-align: center;	
+}
+/*
+#navigation {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  display: inline-block;
+  width: 100%;
+  height: 55px;
+  top: 0;
+  left: 0;
+  box-shadow: 0 1px 6px #2d2d2d;
+  background: rgba(250,250,250,0.9);
+  border-top: 1px solid #e6e7e8;
+  border-bottom: 1px solid #e6e7e8;
+}*/
+/*#navigation {
+  list-style: none;
+}*/
+/*#navigation li {
+  display: inline-block;
+  margin-right: 5px;
+}*/
+/*li a {
+  display: block;
+  float: left;
+  padding: 0 5px;
+  line-height: 55px;
+  font-weight: bold;
+  color: #009999;
+}
+li a:hover {
+  text-decoration: none;
+  color: #444;
+  background: #fcfcfc;
+}*/
+
+#signature {
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+}
+
+.jumbotron {
+	background: #009999;
+	color: floralwhite;
+}
+
+#subtitle {
+	color: floralwhite;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #009999;
+   /* background: #1A237E;*/
+}
+
+.navbar-default .navbar-nav > .open > a,
+ .navbar-default .navbar-nav > .open > a:hover,
+ .navbar-default .navbar-nav > .open > a:focus {
+    color: #009999;
+   /* background: #1A237E;*/
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu> li> a,
+.navbar-default .navbar-nav .open .dropdown-menu {
+    background-color: #009999;
+    color: floralwhite;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu> li> a:hover {
+    color:#000000;
+}
