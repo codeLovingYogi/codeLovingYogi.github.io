@@ -1,37 +1,20 @@
 body {
-	/*color: 2d2d2d;*/
 	padding-top: 55px;
 }
 
-/*header {
-	padding-top: 100px;
-}*/
-
-h2 {
-	/*padding-left: 75px;*/
-	color: floralwhite;
-}
-
-h3 {
+section h3 {
 	padding-top: 100px;
   padding-bottom: 20px;
 	text-align: center;
 }
 
-/*figure {
-	padding-top: 100px
-}
-*/
-h4 {
+section h4 {
 	text-align: center;
   padding-bottom: 20px;
-
-
 }
 
 section {
 	padding-top: 55px;
-  /*height: 700px;*/
 }
 
 p {
