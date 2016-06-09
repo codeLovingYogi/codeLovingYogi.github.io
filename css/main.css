@@ -4,13 +4,13 @@ body {
 
 section h3 {
 	padding-top: 100px;
-  padding-bottom: 20px;
+  	padding-bottom: 20px;
 	text-align: center;
 }
 
 section h4 {
 	text-align: center;
-  padding-bottom: 20px;
+  	padding-bottom: 20px;
 }
 
 section {
@@ -77,4 +77,37 @@ a {
 
 .navbar-default .navbar-nav .open .dropdown-menu> li> a:hover {
     color: #000000;
+}
+
+ /* For anchor tags with no text, to provide 
+ additional information for screenreaders,
+ wrapping text in span but hiding via css */
+a span {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+}
+
+aside {
+	text-align: center;
+	padding: 20px;
+}
+.preview {
+	width: 5%;
+}
+
+#image{
+    line-height:650px;
+	width: 75%;
+    height: auto;
+    margin: auto;
+    /*background-color: #8e68ff;*/
+    background-image: url('');
+    background-repeat: no-repeat;
+    color:#FFFAF0;
+    text-align: center;
+    background-size: 100%;
+    font-size: 150%;
 }
