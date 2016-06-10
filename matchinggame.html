@@ -18,7 +18,7 @@
   	<link href="css/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="theBody" onload="newGame()">
 	<nav class="navbar navbar-default navbar-fixed-top role=navigation">
 		<div class="container">
 			<div class="navbar-header">
@@ -32,17 +32,17 @@
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="index.html"><span class="glyphicon glyphicon-home"
+					<li><a href="index.html#"><span class="glyphicon glyphicon-home"
                      aria-hidden="true"></span> Home</a></li>
 					<li><a href="index.html#about">About</a></li>
 					<li><a href="index.html#schedule">Itinerary</a></li>
 					<li><a href="index.html#contact">Connect</a></li>
-					<li class="dropdown active">
+					<li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                          role="button" aria-haspopup="true" aria-expanded="false">
                          Travels<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Australia</a></li>
+                            <li><a href="travels.html">Australia</a></li>
                             <li><a href="#">Great American Roadtrip</a></li>
                             <li role="separator" class="divider"></li>
                             <li class="dropdown-header"><h5>Asia</h5></li>
@@ -61,7 +61,7 @@
                             <li><a href="#">Guatemala, Colombia, Ecuador</a></li>
                         </ul>
                      </li>
-                     <li class="dropdown">
+                     <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                          role="button" aria-haspopup="true" aria-expanded="false">
                          Fun<span class="caret"></span></a>
@@ -79,40 +79,25 @@
 			<div class="row row-header">
 				<div class="col-xs-12">
 					<h1>YogiLovingCode</h1>
-					<h2>Travels</h2>
+					<h2>Matching Game</h2>
 				</div>
 			</div>
 		</div>
 	</header>
 
-	<aside>
+	<main id="matchingGame">
 		<div class="container">
 			<div class="row row-content">
-				<div class="col-sm-12">
-					Hover over thumbnail to display larger image
-					<br><br>
-					<img class = "preview" alt = "Description 1" src = "prep.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-
-					<img class = "preview" alt = "Description 2" src = "namaste.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-					
-					<img class = "preview" src = "tree.jpg" alt = "Description 3" onmouseover = "upDate(this)" onmouseout = "unDo()">
-				</div>	
-			</div>
-		</div>
-	</aside>
-
-	<main>
-		<div class="container">
-			<div class="row row-content">
-				<div class="col-sm-12">
-					<a id="nicaragua"></a>
-					<figure id = "image"></figure>
+				<div class="col-sm-12" id="howToMatch">
+					Which image is missing on the left?<br>
+					Click on the extra one from the right side!
 				</div>
-			
 			</div>
 		</div>
+		<section id="leftSide"></section>
+		<section id="rightSide"></section>
 	</main>
-	
+
 	<footer class="row-footer">
 		<div class="container">
 			<address>
@@ -138,18 +123,60 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 	<script>
-		function upDate(previewPic){
-    		var picURL = "url('" + previewPic.src + "')";
-    		document.getElementById("image").style.backgroundImage = picURL;
-    		document.getElementById("image").innerHTML = previewPic.alt;
-		}
+		var numberOfHearts = 5;
+		var viewportWidth = (window.innerWidth - 200) / 2;
 
-		function unDo(){
-		    document.getElementById("image").style.backgroundImage = '';
-		    document.getElementById("image").innerHTML = 'Hover over an image to display here'
-				
-		}
-	</script>
+		var rightSide = document.getElementById("rightSide");
+		var leftSide = document.getElementById("leftSide");
+
+    	var answer;
+    	var theBody = document.getElementById("theBody");
+
+		function newGame() {
+      		deleteImages();
+
+			for (var i = 0; i < numberOfHearts; i++) {
+				var heart = document.createElement("img");
+				heart.setAttribute("src", "heart.jpg");
+				heart.setAttribute("class", "heart");
+    			heart.style.top = Math.floor(Math.random() * 425) + "px";
+    			heart.style.left = Math.floor(Math.random() * viewportWidth) + "px";
+			  	leftSide.appendChild(heart);
+
+			  	var theNode = leftSide.lastChild;
+			  	var theClone=theNode.cloneNode(true);
+			  	rightSide.appendChild(theClone);
+			}	
+		
+      		rightSide.removeChild(rightSide.lastChild);
+      		answer = leftSide.lastChild;
+      		
+      		answer.onclick = advanceGame;
+      		theBody.onclick = gameOver;
+		};
+
+		function advanceGame() {
+      		event.stopPropagation();
+    		numberOfHearts += 5;
+    		newGame();
+    	};
+
+    	function gameOver() {
+    		alert("Sorry, you lost.");
+      		answer.style.background = "gray";
+      		theBody.onclick = null;
+      		answer.onclick = null;
+    	};
+
+    	function deleteImages() {
+      		while (rightSide.firstChild) {
+        		rightSide.removeChild(rightSide.firstChild);
+      		}
+      		while (leftSide.firstChild) {
+        		leftSide.removeChild(leftSide.firstChild);
+      		}
+    	}	
+	</script>	
 </body>
 </html>
 

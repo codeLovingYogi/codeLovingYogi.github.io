@@ -24,6 +24,7 @@ p {
 
 footer {
 	text-align: center;
+	padding: 20px;
 }
 
 a {
@@ -35,7 +36,8 @@ a {
 }
 
 .trio {
-	font-size: 16px;
+	/*font-size: 16px;*/
+	font-size: 1.143em;
 }
 
 #socialmedia {
@@ -44,7 +46,8 @@ a {
 }
 
 #signature {
-	font-size: 18px;
+	/*font-size: 16px;*/
+	font-size: 1.143em;
 	color: #000000;
 }
 
@@ -94,8 +97,9 @@ aside {
 	text-align: center;
 	padding: 20px;
 }
+
 .preview {
-	width: 5%;
+	width: 10%;
 }
 
 #image{
@@ -106,8 +110,34 @@ aside {
     /*background-color: #8e68ff;*/
     background-image: url('');
     background-repeat: no-repeat;
-    color:#FFFAF0;
+    color: #FFFAF0;
     text-align: center;
     background-size: 100%;
-    font-size: 150%;
+    font-size: 1.5em;
+}
+
+/*For the matching game*/
+.heart {
+  	position: absolute;
+  	width: 50px;
+}
+
+#rightSide {
+	width: 50%;
+	height: 500px;
+	float; right;
+	display: inline;
+	position: relative;
+}
+
+#leftSide {
+	width: 50%;
+	height: 500px;
+	float: left;
+  	border-right: 3px solid;
+  	position: relative;
+}
+
+#howToMatch {
+	text-align: center;
 }
