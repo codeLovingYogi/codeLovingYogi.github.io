@@ -8,18 +8,10 @@ section h3 {
 	text-align: center;
 }
 
-section h4 {
-	text-align: center;
-  	padding-bottom: 20px;
-}
-
-section {
-	padding-top: 55px;
-}
-
 p {
 	color: #009999;
-	padding: 20px;
+	padding: 10px 0px 0px 10px;
+	font-size: 1.1em;
 }
 
 footer {
@@ -35,11 +27,6 @@ a {
 	width: 100%;
 }
 
-.trio {
-	/*font-size: 16px;*/
-	font-size: 1.143em;
-}
-
 #socialmedia {
 	padding: 25px;
 	text-align: center;	
@@ -53,10 +40,6 @@ a {
 
 .jumbotron {
 	background: #009999;
-	color: #FFFAF0;
-}
-
-#subtitle {
 	color: #FFFAF0;
 }
 
@@ -93,6 +76,8 @@ a span {
   top: -10px;
 }
 
+/* For photo gallery */
+
 aside {
 	text-align: center;
 	padding: 20px;
@@ -102,12 +87,11 @@ aside {
 	width: 10%;
 }
 
-#image{
+#image {
     line-height:650px;
 	width: 75%;
     height: auto;
     margin: auto;
-    /*background-color: #8e68ff;*/
     background-image: url('');
     background-repeat: no-repeat;
     color: #FFFAF0;
@@ -140,4 +124,28 @@ aside {
 
 #howToMatch {
 	text-align: center;
+}
+
+/* For About me carousel */
+
+.carousel {
+	background: rgb(0, 0, 0);
+}
+.carousel-caption.caption-right{
+	top: 60px;
+	width: 30%; 
+	bottom: auto;
+	float: right;
+	left: auto;
+	right: 10%;
+	text-align: left;
+}
+
+.carousel-caption.caption-bg {
+	background: rgba(0, 0, 0, 0.8);
+	padding: 10px;
+}
+
+.caption {
+	font-size: 1.4em;
 }
