@@ -2,16 +2,14 @@ body {
 	padding-top: 55px;
 }
 
-section h3 {
-	padding-top: 100px;
-  	padding-bottom: 20px;
-	text-align: center;
+section {
+	padding-top: 120px;
 }
 
 p {
-	color: #009999;
+	/*color: #009999;*/
 	padding: 10px 0px 0px 10px;
-	font-size: 1.1em;
+	/*font-size: 1em;*/
 }
 
 footer {
@@ -23,19 +21,13 @@ a {
 	color: #009999
 }
 
-.sectionpic {
-	width: 100%;
-}
-
 #socialmedia {
 	padding: 25px;
 	text-align: center;	
 }
 
 #signature {
-	/*font-size: 16px;*/
 	font-size: 1.143em;
-	color: #000000;
 }
 
 .jumbotron {
@@ -77,7 +69,6 @@ a span {
 }
 
 /* For photo gallery */
-
 aside {
 	text-align: center;
 	padding: 20px;
@@ -127,18 +118,17 @@ aside {
 }
 
 /* For About me carousel */
-
 .carousel {
 	background: rgb(0, 0, 0);
 }
 .carousel-caption.caption-right{
-	top: 60px;
+	top: 50px;
 	width: 30%; 
 	bottom: auto;
 	float: right;
 	left: auto;
 	right: 10%;
-	text-align: left;
+	text-align: right;
 }
 
 .carousel-caption.caption-bg {

@@ -3,10 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>YogiLovingCode</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
 	<meta name="description" content="YogiLovingCode, codeLovingYogi">
+	<title>YogiLovingCode</title>
 	<link rel="icon" type="image/png" href="img/icon.jpg"/>
 	
 	<!-- Latest compiled and minified CSS -->
@@ -90,7 +89,6 @@
 				<div class="row row-content">
 		            <div class="col-sm-12">
 		            	<a id="about"></a>
-		            	<h3></h3>
 		                <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
 		                    <!-- Indicators -->
 		                    <ol class="carousel-indicators">
@@ -105,8 +103,8 @@
 		                             src = "img/prep.jpg" alt = "prep yoga pose">
 		                            <div class="carousel-caption caption-right caption-bg">
 		                                <h2 class="caption">Hi!</h2>
-		                                <p>- my name is Felice<br>
-		                                - a yogi who loves code</p>
+		                                <p>i am Felice,<br>
+		                                a yogi who loves code</p>
 		                            </div>
 		                        </div>
 		                        <div class="item">
@@ -114,10 +112,10 @@
 		                             src = "img/tree.jpg" alt = "tree yoga pose">
 		                            <div class="carousel-caption caption-right caption-bg">
 		                                <h2 class="caption">About</h2>
-		                                <p>- career transitioner<br>
-		                                - self-taught developer<br>
-										- world traveler<br>
-										- salsa dancer</p>
+		                                <p>career transitioner,<br>
+		                                self-taught developer,<br>
+										world traveler,<br>
+										salsa dancer</p>
 		                            </div>
 		                        </div>
 		                        <div class="item">
@@ -125,9 +123,9 @@
 		                         src = "img/namaste.jpg" alt = "namaste yoga pose">
 		                            <div class="carousel-caption caption-right caption-bg">
 		                                <h2 class="caption">Interests</h2>
-		                                <p>- coding for social good<br>
-										- empowering women in technology<br>
-										- mentoring next generation of coders</p>
+		                                <p>coding for social good,<br>
+										empowering women in technology,<br>
+										mentoring next generation of coders</p>
 		                            </div>
 		                        </div>
 		                    </div>
@@ -155,25 +153,15 @@
 
 			<section>
 				<div class="row row-content">
-					<div class="col-sm-12">
+					<div class="col-sm-12 text-center">
 						<a id="contact"></a>
-						<h3>Connect with me!</h3>
-					</div>
-				</div>
-				<div class="row row-content">
-					<div class="col-sm-3">
-						<figure>
-							<img class="sectionpic" src = "img/namaste.jpg" alt = "namaste yoga pose">
-						</figure>
-					</div>
-					<div class="col-sm-6 text-center">
 						<br><br>
+						<p>Yours in code,</p>
 						<figure>
 							<img src = "img/heart1.png" alt = "yours in code <3">
 						</figure>
 						<p id="signature">codeLovingYogi</p>
 					</div>
-					<!-- <div class="col-sm-6 text-center"></div> -->
 				</div>
 			</section>
 		</div>
@@ -183,7 +171,8 @@
 		<div class="container">
 			<address>
 				<div class="col-xs-12">
-					<a href="mailto:yogilovingcode@gmail.com">Contact me</a>
+					<a href="mailto:yogilovingcode@gmail.com">Contact me!</a>
+					<!-- <a type="button" class="btn btn-link btn-default" id="contactme" href="#contactme">Connect with me!</a> -->
 				</div>
 				<div class="col-xs-12" id="socialmedia">
 					<a class="btn btn-social-icon btn-github" href="https://github.com/codelovingyogi"><i class="fa fa-github"></i><span>GitHub</span></a>
@@ -197,11 +186,54 @@
 		</div>
 	</footer>
 
+ <!--    <div id="contactmeModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+         Modal content
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Contact me!</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-horizontal" role="form">
+					    <fieldset>
+					    	<label for ="firstName" class="visuallyhidden"></label>		 
+						  	<input type = "text" name = "firstName" id = "firstName" class="form-control" placeholder="First name" required>
+
+						  	<label for ="lastName" class="visuallyhidden"></label>		 
+						  	<input type = "text" name = "lastName" id = "firstName" class="form-control" placeholder="Last name" required>
+
+						  	<label for ="emailAddress" class="visuallyhidden"></label>
+					    	<input type="emailAddress" id="emailaddress" class="form-control" placeholder="Email address" required>
+
+					    	<label for ="message" class="visuallyhidden"></label>
+					    	<textarea id="message" class="form-control" rows="12" placeholder="Message" required></textarea>
+                    	</fieldset>
+                    </div>
+
+                    <button type="submit" class="btn btn-info">Submit</button>
+                    <button type="button" class="btn btn-default btn-sm"
+                       data-dismiss="modal">Cancel</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div> -->
+
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 	<!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<script>
+        // $(document).ready(function(){
+        //     $("#contactme").click(function(){
+        //         $("#contactmeModal").modal();
+        //     });
+        // });
+	</script>
 </body>
 </html>
 
