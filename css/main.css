@@ -139,3 +139,7 @@ aside {
 .caption {
 	font-size: 1.4em;
 }
+
+canvas {
+	margin: auto;
+}
