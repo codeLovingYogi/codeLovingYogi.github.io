@@ -91,6 +91,10 @@ aside {
     font-size: 1.5em;
 }
 
+#nicaragua {
+	text-align: center;
+}
+
 /*For the matching game*/
 .heart {
   	position: absolute;

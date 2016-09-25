@@ -100,11 +100,11 @@
 				<div class="col-sm-12">
 					Hover over thumbnail to display larger image
 					<br><br>
-					<img class = "preview" alt = "Description 1" src = "img/prep.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+					<img class = "preview" alt = "Nicaragua is the source of my inspiration for a career change." src = "img/prep.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
 
-					<img class = "preview" alt = "Description 2" src = "img/namaste.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+					<img class = "preview" alt = "I realized I wanted to use code as an instrument to serve others." src = "img/namaste.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
 					
-					<img class = "preview" src = "img/tree.jpg" alt = "Description 3" onmouseover = "upDate(this)" onmouseout = "unDo()">
+					<img class = "preview" src = "img/tree.jpg" alt = "I hope to use my interest in the latest web technologies to build great things." onmouseover = "upDate(this)" onmouseout = "unDo()">
 				</div>	
 			</div>
 		</div>
@@ -149,13 +149,17 @@
 	<script>
 		function upDate(previewPic){
     		var picURL = "url('" + previewPic.src + "')";
+    		var text = document.createElement("p");
+    		text.innerHTML = previewPic.alt;
     		document.getElementById("image").style.backgroundImage = picURL;
     		document.getElementById("image").innerHTML = previewPic.alt;
+    		document.getElementById("nicaragua").appendChild(text);
 		}
 
 		function unDo(){
 		    document.getElementById("image").style.backgroundImage = '';
-		    document.getElementById("image").innerHTML = 'Hover over an image to display here'
+		    document.getElementById("image").innerHTML = 'Hover over an image to display here';
+		    document.getElementById("nicaragua").removeChild(document.getElementById("nicaragua").lastChild);
 				
 		}
 	</script>
